@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.0-alpha.2] - 2021-09-21
+
+### Documentation
+
+- Replace markdawn license file with a text file
+- Update readme file with base information
+
 ## [1.0.0-alpha.1] - 2021-09-21
 
 ### Documentation
