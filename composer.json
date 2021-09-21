@@ -40,6 +40,11 @@
             "dev-master": "1.x-dev"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
