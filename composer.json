@@ -22,6 +22,7 @@
         "php": "^7.3 || ^8.0",
         "pestphp/pest": "^1.0",
         "pestphp/pest-plugin": "^1.0",
+        "php-http/message": "^1.0",
         "php-http/mock-client": "^1.5"
     },
     "autoload": {
