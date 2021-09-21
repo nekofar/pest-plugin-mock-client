@@ -1,5 +1,5 @@
 <?php
 
-use function Pest\PluginName\example;
+use function Nekofar\Pest\MockClient\client;
 
-example('foo');
+client();

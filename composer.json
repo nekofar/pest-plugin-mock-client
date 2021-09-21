@@ -20,24 +20,34 @@
     "license": "MIT",
     "require": {
         "php": "^7.3 || ^8.0",
+        "guzzlehttp/psr7": "^2.0",
         "pestphp/pest": "^1.0",
-        "pestphp/pest-plugin": "^1.0"
+        "pestphp/pest-plugin": "^1.0",
+        "php-http/message": "^1.0",
+        "php-http/mock-client": "^1.5"
     },
     "autoload": {
         "psr-4": {
-            "Nekofar\\Pest\\Plugin\\MockClient\\": "src/"
+            "Nekofar\\Pest\\MockClient\\": "src/"
         },
         "files": [
             "src/Autoload.php"
         ]
     },
     "require-dev": {
-        "pestphp/pest-dev-tools": "dev-master",
-        "nekofar/dev-tools": "^1.2"
+        "ergebnis/phpstan-rules": "^0.15.3",
+        "nekofar/dev-tools": "^1.2",
+        "phpstan/phpstan-strict-rules": "^0.12.11",
+        "thecodingmachine/phpstan-strict-rules": "^0.12.1"
     },
     "extra": {
         "branch-alias": {
             "dev-master": "1.x-dev"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
         }
     },
     "minimum-stability": "dev",
