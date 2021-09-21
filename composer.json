@@ -22,7 +22,8 @@
         "php": "^7.3 || ^8.0",
         "pestphp/pest": "^1.0",
         "pestphp/pest-plugin": "^1.0",
-        "php-http/mock-client": "^1.5"
+        "php-http/mock-client": "^1.5",
+        "phpstan/phpstan-strict-rules": "^0.12.11"
     },
     "autoload": {
         "psr-4": {
