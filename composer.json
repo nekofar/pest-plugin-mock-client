@@ -1,6 +1,13 @@
 {
-    "name": "pestphp/pest-plugin-template",
-    "description": "My awesome plugin",
+    "name": "nekofar/pest-plugin-mock-client",
+    "description": "Pest Plugin for Mock HTTP client",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Milad Nekofar",
+            "email": "milad@nekofar.com"
+        }
+    ],
     "keywords": [
         "php",
         "framework",
@@ -18,14 +25,15 @@
     },
     "autoload": {
         "psr-4": {
-            "Pest\\PluginName\\": "src/"
+            "Nekofar\\Pest\\Plugin\\MockClient\\": "src/"
         },
         "files": [
             "src/Autoload.php"
         ]
     },
     "require-dev": {
-        "pestphp/pest-dev-tools": "dev-master"
+        "pestphp/pest-dev-tools": "dev-master",
+        "nekofar/dev-tools": "^1.2"
     },
     "extra": {
         "branch-alias": {
