@@ -2,17 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Pest\PluginName;
+namespace Nekofar\Pest\MockClient;
 
-use Pest\Plugin;
-use PHPUnit\Framework\TestCase;
-
-Plugin::uses(Example::class);
-
-/**
- * @return TestCase
- */
-function example(string $argument)
+function client(): MockClient
 {
-    return test()->example(...func_get_args());
+    return new MockClient();
 }
