@@ -25,7 +25,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Nekofar\\Pest\\Plugin\\MockClient\\": "src/"
+            "Nekofar\\Pest\\Plugin\\Mock\\Client\\": "src/"
         },
         "files": [
             "src/Autoload.php"
