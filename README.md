@@ -1,9 +1,58 @@
-This repository contains the Pest Plugin Template.
+# The Pest Slim Plugin
 
-> If you want to start testing your application with Pest, visit the main **[Pest Repository](https://github.com/pestphp/pest)**.
+[![Packagist Version][icon-packagist]][link-packagist]
+[![PHP from Packagist][icon-php-version]][link-packagist]
+[![Packagist Downloads][icon-downloads]][link-packagist]
+[![Tests Status][icon-workflow]][link-workflow]
+[![Coverage Status][icon-coverage]][link-coverage]
+[![License][icon-license]][link-license]
+[![Twitter: nekofar][icon-twitter]][link-twitter]
 
-- Explore the docs: **[pestphp.com/docs/plugins/creating-plugins »](https://pestphp.com/docs/plugins/creating-plugins)**
-- Follow us on Twitter: **[@pestphp »](https://twitter.com/pestphp)**
-- Join us on the Discord Server: **[discord.gg/bMAJv82 »](https://discord.gg/bMAJv82)**
+> This package is a plugin for [Pest PHP](https://pestphp.com).
+The Slim Plugin for Pest gives your basic functionality for testing your API's built by Slim.
 
-Pest was created by **[Nuno Maduro](https://twitter.com/enunomaduro)** under the **[Sponsorware license](https://github.com/sponsorware/docs)**. It got open-sourced and is now licensed under the **[MIT license](https://opensource.org/licenses/MIT)**.
+## Installation
+
+To get started, install the plugin using composer:
+
+```bash
+composer require nekofar/pest-plugin-mock-client --dev
+```
+
+
+Requires Slim Framework 4 and PHP 7.3 or newer.
+
+<!--
+## Usage
+
+```php
+use function Nekofar\Pest\MockClient\client;
+            
+it('', function (): void {
+    client();
+});
+```
+-->
+
+## Contributing
+
+Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE) for more information.
+
+---
+[icon-packagist]: https://img.shields.io/packagist/v/nekofar/pest-plugin-mock-client.svg
+[icon-php-version]: https://img.shields.io/packagist/php-v/nekofar/pest-plugin-mock-client.svg
+[icon-twitter]: https://img.shields.io/twitter/follow/nekofar.svg?style=flat
+[icon-coverage]: https://codecov.io/gh/nekofar/pest-plugin-mock-client/graph/badge.svg
+[icon-license]: https://img.shields.io/github/license/nekofar/pest-plugin-mock-client.svg
+[icon-workflow]: https://img.shields.io/github/workflow/status/nekofar/pest-plugin-mock-client/Tests
+[icon-downloads]: https://img.shields.io/packagist/dt/nekofar/pest-plugin-mock-client
+
+[link-packagist]: https://packagist.org/packages/nekofar/pest-plugin-mock-client
+[link-twitter]: https://twitter.com/nekofar
+[link-coverage]: https://codecov.io/gh/nekofar/pest-plugin-mock-client
+[link-license]: https://github.com/nekofar/pest-plugin-mock-client/blob/master/LICENSE.md
+[link-workflow]: https://github.com/nekofar/pest-plugin-mock-client/actions/workflows/tests.yml
