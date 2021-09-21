@@ -35,7 +35,8 @@
     "require-dev": {
         "ergebnis/phpstan-rules": "^0.15.3",
         "nekofar/dev-tools": "^1.2",
-        "phpstan/phpstan-strict-rules": "^0.12.11"
+        "phpstan/phpstan-strict-rules": "^0.12.11",
+        "thecodingmachine/phpstan-strict-rules": "^0.12.1"
     },
     "extra": {
         "branch-alias": {
