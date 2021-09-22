@@ -1,5 +1,7 @@
 <?php
 
-use function Nekofar\Pest\MockClient\client;
+declare(strict_types=1);
 
-client();
+use function Nekofar\Pest\MockClient\mockClient;
+
+mockClient()->assertRequestCount(0);

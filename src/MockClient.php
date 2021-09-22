@@ -1,10 +1,18 @@
 <?php
 
+/*
+ * (c) Milad Nekofar <milad@nekofar.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 declare(strict_types=1);
 
 namespace Nekofar\Pest\MockClient;
 
 use Http\Mock\Client;
+use PHPUnit\Framework\Assert as PHPUnit;
 use Psr\Http\Client\ClientInterface;
 
 /**
@@ -28,11 +36,19 @@ final class MockClient
     }
 
     /**
+     * Assert that the client has the expected count of requests at the given.
+     */
+    public function assertRequestCount(int $count): void
+    {
+        PHPUnit::assertCount($count, $this->getRequests());
+    }
+
+    /**
      * Proxies calls to the original client object.
      *
-     * @param array<int, mixed> $arguments
+     * @param array<int, object|callable|null> $arguments
      *
-     * @return mixed
+     * @return void|object|boolean
      */
     public function __call(string $method, array $arguments)
     {
