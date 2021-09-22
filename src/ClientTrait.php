@@ -15,7 +15,9 @@ trait ClientTrait
     protected $mockClient;
 
     /**
-     * @return MockClient
+     * Creates a new mock client or return an existing instance.
+     *
+     * @return object|MockClient
      */
     public function mockClient()
     {
