@@ -26,8 +26,8 @@ it('can add response', function (): void {
     mockClient()->addResponse($response);
 
     $returnedResponse = mockClient()->sendRequest($request);
-    $this->assertSame($response, $returnedResponse);
-    $this->assertSame($request, mockClient()->getLastRequest());
+    assertSame($response, $returnedResponse);
+    assertSame($request, mockClient()->getLastRequest());
 });
 
 it('can set default response', function (): void {
@@ -39,8 +39,8 @@ it('can set default response', function (): void {
 
     $firstReturnedResponse = mockClient()->sendRequest($firstRequest);
     $secondReturnedResponse = mockClient()->sendRequest($secondRequest);
-    $this->assertSame($response, $firstReturnedResponse);
-    $this->assertSame($response, $secondReturnedResponse);
+    assertSame($response, $firstReturnedResponse);
+    assertSame($response, $secondReturnedResponse);
 });
 
 it('can throw exception', function (): void {
@@ -77,7 +77,7 @@ it('can send request by request matcher', function (): void {
     mockClient()->on($requestMatcher, $response);
 
     $returnedResponse = mockClient()->sendRequest($request);
-    $this->assertSame($response, $returnedResponse);
+    assertSame($response, $returnedResponse);
 });
 
 it('can throw exception by request matcher', function (): void {
