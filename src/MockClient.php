@@ -30,9 +30,9 @@ final class MockClient
     /**
      * Proxies calls to the original client object.
      *
-     * @param array<int, mixed> $arguments
+     * @param array<int, object|callable|null> $arguments
      *
-     * @return mixed
+     * @return void|object|boolean
      */
     public function __call(string $method, array $arguments)
     {

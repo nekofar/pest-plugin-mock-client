@@ -9,7 +9,7 @@ use Pest\Plugin;
 Plugin::uses(ClientTrait::class);
 
 /**
- * @return mixed|MockClient
+ * @return object|MockClient
  */
 function mockClient()
 {
