@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Nekofar\Pest\MockClient;
 
-function client(): MockClient
+/**
+ * @return mixed|MockClient
+ */
+function mockClient()
 {
     return new MockClient();
 }

@@ -1,5 +1,5 @@
 <?php
 
-use function Nekofar\Pest\MockClient\client;
+use function Nekofar\Pest\MockClient\mockClient;
 
-client();
+mockClient();
