@@ -57,14 +57,28 @@
         "preferred-install": "dist"
     },
     "scripts": {
-        "lint": "php-cs-fixer fix -v",
-        "test:lint": "php-cs-fixer fix -v --dry-run",
-        "test:types": "phpstan analyse --ansi",
-        "test:unit": "pest --colors=always",
+        "lint": "@scan",
+        "pest": "pest",
+        "phpcbf": "phpcbf",
+        "phpcs": "phpcs",
+        "phpstan": "phpstan analyse --no-progress --ansi --memory-limit 256M",
+        "scan": [
+            "@phpcs",
+            "@phpstan"
+        ],
         "test": [
-            "@test:lint",
-            "@test:types",
-            "@test:unit"
+            "@scan",
+            "@pest"
         ]
+    },
+    "scripts-descriptions": {
+        "pest": "Runs Pest tests",
+        "phpcbf": "Runs PHP_CodeSniffer fixes",
+        "phpcs": "Runs PHP_CodeSniffer tests",
+        "phpstan": "Runs PHPStan tests",
+        "phpunit": "Runs PHPUnit tests",
+        "scan": "Runs all scans!",
+        "test": "Runs all tests!"
     }
+
 }
