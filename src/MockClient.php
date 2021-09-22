@@ -12,6 +12,7 @@ declare(strict_types=1);
 namespace Nekofar\Pest\MockClient;
 
 use Http\Mock\Client;
+use PHPUnit\Framework\Assert as PHPUnit;
 use Psr\Http\Client\ClientInterface;
 
 /**
@@ -32,6 +33,14 @@ final class MockClient
     public function __construct()
     {
         $this->client = new Client();
+    }
+
+    /**
+     * Assert that the client has the expected count of requests at the given.
+     */
+    public function assertRequestCount(int $count): void
+    {
+        PHPUnit::assertCount($count, $this->getRequests());
     }
 
     /**
