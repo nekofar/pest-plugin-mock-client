@@ -37,6 +37,7 @@
     "require-dev": {
         "ergebnis/phpstan-rules": "^0.15.3",
         "nekofar/dev-tools": "^1.2",
+        "pestphp/pest-plugin-global-assertions": "^1.0",
         "phpstan/phpstan-strict-rules": "^0.12.11",
         "thecodingmachine/phpstan-strict-rules": "^0.12.1"
     },
