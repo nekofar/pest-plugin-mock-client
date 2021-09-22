@@ -6,7 +6,7 @@ namespace Nekofar\Pest\MockClient;
 
 use Pest\Plugin;
 
-Plugin::uses(Client::class);
+Plugin::uses(ClientTrait::class);
 
 /**
  * @return mixed|MockClient

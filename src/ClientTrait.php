@@ -5,7 +5,7 @@ namespace Nekofar\Pest\MockClient;
 /**
  * @internal
  */
-trait Client
+trait ClientTrait
 {
     /**
      * @var MockClient
