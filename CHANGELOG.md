@@ -1,6 +1,49 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.0-alpha.4] - 2021-09-22
+
+### Miscellaneous Tasks
+
+- Add `pestphp/pest-plugin-global-assertions:^1.0` package
+
+### Testing
+
+- Add more tests for `mockClient`
+- Replace instance assertions by global functions
+- Replace assertions by expectations
+
+## [1.0.0-alpha.3] - 2021-09-22
+
+### Documentation
+
+- Add some description for `mockClient`
+- Add license docblock to the top of files
+
+### Features
+
+- Keep single instance for `MockClient` using `mockClient` function
+- Add new `assertRequestCount` for assert `MockClient` request count
+
+### Miscellaneous Tasks
+
+- Replace `php-cs-fixer` by `phpcs`
+
+### Refactor
+
+- Rename `client` function to `mockClient`
+- Rename `Client` trait to `ClientTrait`
+- Add missing strict type declarations
+- Replace mixed type usages by proper types
+
+### Styling
+
+- Solve whitespace issues all over codes
+
+### Testing
+
+- Add a test to check it can send multiple requests
+
 ## [1.0.0-alpha.2] - 2021-09-21
 
 ### Documentation
