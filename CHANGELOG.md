@@ -1,6 +1,25 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [unreleased]
+
+### Miscellaneous Tasks
+
+- Bump actions/checkout from 2.3.5 to 2.4.0
+- Bump actions/cache from 2.1.6 to 2.1.7
+- Bump shivammathur/setup-php from 2.15.0 to 2.16.0
+- Update github funding configs
+- Solve github funding broken link issue
+- Bump orhun/git-cliff-action from 1.1.5 to 1.1.6
+- Bump shivammathur/setup-php from 2.16.0 to 2.17.0
+- Bump shivammathur/setup-php from 2.17.0 to 2.17.1
+
+## [1.0.0-alpha.5] - 2021-09-22
+
+### Miscellaneous Tasks
+
+- Upgrade dependabot configuration
+
 ## [1.0.0-alpha.4] - 2021-09-22
 
 ### Miscellaneous Tasks
