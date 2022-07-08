@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.0-alpha.9] - 2022-07-08
+
+### Miscellaneous Tasks
+
+- Update `config.allow-plugins` on the `composer` configs
+- Normalize and update `composer` configs
+
 ## [1.0.0-alpha.8] - 2022-07-08
 
 ### Miscellaneous Tasks
