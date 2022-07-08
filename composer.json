@@ -60,7 +60,8 @@
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "pestphp/pest-plugin": true,
             "infection/extension-installer": true,
-            "phpstan/extension-installer": true
+            "phpstan/extension-installer": true,
+            "composer/installers": true
         }
     },
     "scripts": {
