@@ -55,7 +55,13 @@
     "prefer-stable": true,
     "config": {
         "sort-packages": true,
-        "preferred-install": "dist"
+        "preferred-install": "dist",
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "pestphp/pest-plugin": true,
+            "infection/extension-installer": true,
+            "phpstan/extension-installer": true
+        }
     },
     "scripts": {
         "lint": "@scan",

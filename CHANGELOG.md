@@ -1,7 +1,21 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [unreleased]
+## [1.0.0-alpha.8] - 2022-07-08
+
+### Miscellaneous Tasks
+
+- Update `config.allow-plugins` on the `composer` configs
+
+## [1.0.0-alpha.7] - 2022-04-11
+
+### Miscellaneous Tasks
+
+- Bump shivammathur/setup-php from 2.17.1 to 2.18.0
+- Bump actions/cache from 3.0.0 to 3.0.1
+- Bump shivammathur/setup-php from 2.18.0 to 2.18.1
+
+## [1.0.0-alpha.6] - 2022-03-02
 
 ### Miscellaneous Tasks
 
