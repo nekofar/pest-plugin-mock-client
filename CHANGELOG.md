@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.0-alpha.12] - 2023-05-18
+
+### <!-- 05 -->Documentation
+
+- Replace build badge on readme file
+
+### <!-- 07 -->Continuous Integrations
+
+- Bump actions/checkout from 3.5.0 to 3.5.1 
+- Bump actions/checkout from 3.5.1 to 3.5.2 
+- Bump shivammathur/setup-php from 2.24.0 to 2.25.0 
+- Bump shivammathur/setup-php from 2.25.0 to 2.25.1 
+- Bump orhun/git-cliff-action from 2.0.5 to 2.0.6 
+- Change `open-pull-requests-limit` from 10 to 20
+
 ## [1.0.0-alpha.11] - 2023-04-03
 
 ### <!-- 07 -->Continuous Integrations
