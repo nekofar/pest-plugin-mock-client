@@ -1,91 +1,97 @@
 {
-    "name": "nekofar/pest-plugin-mock-client",
-    "description": "Pest Plugin for Mock HTTP client",
-    "license": "MIT",
-    "type": "library",
-    "keywords": [
-        "php",
-        "framework",
-        "pest",
-        "unit",
-        "test",
-        "testing",
-        "plugin"
-    ],
-    "authors": [
-        {
-            "name": "Milad Nekofar",
-            "email": "milad@nekofar.com"
-        }
-    ],
-    "require": {
-        "php": "^7.3 || ^8.0",
-        "guzzlehttp/psr7": "^2.0",
-        "pestphp/pest": "^1.0",
-        "pestphp/pest-plugin": "^1.0",
-        "php-http/message": "^1.0",
-        "php-http/mock-client": "^1.5"
-    },
-    "require-dev": {
-        "ergebnis/phpstan-rules": "^0.15.3",
-        "nekofar/dev-tools": "^1.2",
-        "pestphp/pest-plugin-global-assertions": "^1.0",
-        "phpstan/phpstan-strict-rules": "^0.12.11",
-        "thecodingmachine/phpstan-strict-rules": "^0.12.1"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "autoload": {
-        "psr-4": {
-            "Nekofar\\Pest\\MockClient\\": "src/"
-        },
-        "files": [
-            "src/Autoload.php"
-        ]
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Tests\\": "tests"
-        }
-    },
-    "config": {
-        "allow-plugins": {
-            "dealerdirect/phpcodesniffer-composer-installer": true,
-            "pestphp/pest-plugin": true,
-            "infection/extension-installer": true,
-            "phpstan/extension-installer": true,
-            "composer/installers": true
-        },
-        "preferred-install": "dist",
-        "sort-packages": true
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.x-dev"
-        }
-    },
-    "scripts": {
-        "lint": "@scan",
-        "pest": "pest",
-        "phpcbf": "phpcbf",
-        "phpcs": "phpcs",
-        "phpstan": "phpstan analyse --no-progress --ansi --memory-limit 256M",
-        "scan": [
-            "@phpcs",
-            "@phpstan"
-        ],
-        "test": [
-            "@scan",
-            "@pest"
-        ]
-    },
-    "scripts-descriptions": {
-        "pest": "Runs Pest tests",
-        "phpcbf": "Runs PHP_CodeSniffer fixes",
-        "phpcs": "Runs PHP_CodeSniffer tests",
-        "phpstan": "Runs PHPStan tests",
-        "phpunit": "Runs PHPUnit tests",
-        "scan": "Runs all scans!",
-        "test": "Runs all tests!"
+  "name": "nekofar/pest-plugin-mock-client",
+  "description": "Pest Plugin for Mock HTTP client",
+  "license": "MIT",
+  "type": "library",
+  "keywords": [
+    "php",
+    "framework",
+    "pest",
+    "unit",
+    "test",
+    "testing",
+    "plugin"
+  ],
+  "authors": [
+    {
+      "name": "Milad Nekofar",
+      "email": "milad@nekofar.com"
     }
+  ],
+  "require": {
+    "php": "^7.3 || ^8.0",
+    "guzzlehttp/psr7": "^2.0",
+    "pestphp/pest": "^1.0",
+    "pestphp/pest-plugin": "^1.0",
+    "php-http/message": "^1.0",
+    "php-http/mock-client": "^1.5"
+  },
+  "require-dev": {
+    "ergebnis/phpstan-rules": "^0.15.3",
+    "nekofar/dev-tools": "^1.2",
+    "pestphp/pest-plugin-global-assertions": "^1.0",
+    "phpstan/phpstan-strict-rules": "^0.12.11",
+    "thecodingmachine/phpstan-strict-rules": "^0.12.1"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Nekofar\\Pest\\MockClient\\": "src/"
+    },
+    "files": [
+      "src/Autoload.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "pestphp/pest-plugin": true,
+      "infection/extension-installer": true,
+      "phpstan/extension-installer": true,
+      "composer/installers": true
+    },
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.x-dev"
+    }
+  },
+  "scripts": {
+    "lint": "@scan",
+    "pest": "pest",
+    "phpcbf": "phpcbf",
+    "phpcs": "phpcs",
+    "phpstan": "phpstan analyse --no-progress --ansi --memory-limit 256M",
+    "scan": [
+      "@phpcs",
+      "@phpstan"
+    ],
+    "test": [
+      "@scan",
+      "@pest"
+    ]
+  },
+  "scripts-descriptions": {
+    "pest": "Runs Pest tests",
+    "phpcbf": "Runs PHP_CodeSniffer fixes",
+    "phpcs": "Runs PHP_CodeSniffer tests",
+    "phpstan": "Runs PHPStan tests",
+    "phpunit": "Runs PHPUnit tests",
+    "scan": "Runs all scans!",
+    "test": "Runs all tests!"
+  },
+  "funding": [
+    {
+      "type": "custom",
+      "url": "https://ud.me/nekofar.crypto"
+    }
+  ]
 }
