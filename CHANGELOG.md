@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.0-alpha.13] - 2023-07-01
+
+### <!-- 05 -->Documentation
+
+- Update crypto funding address over configs
+- Add funding to the composer configs
+- Add crypto donate badge to the project readme
+
+### <!-- 07 -->Continuous Integrations
+
+- Bump shivammathur/setup-php from 2.25.1 to 2.25.2 
+- Bump actions/checkout from 3.5.2 to 3.5.3 
+
 ## [1.0.0-alpha.12] - 2023-05-18
 
 ### <!-- 05 -->Documentation
